@@ -6,8 +6,18 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+import javax.persistence.JoinTable;
+import java.util.Arrays;
+
 public class ManyToMany_App {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException {
+
+        Class<?> joinTable = Thread.currentThread().getContextClassLoader()
+                .loadClass(JoinTable.class.getName());
+
+        System.out.println(Arrays.asList(joinTable.getDeclaredMethods()));
+
+
         SessionFactory factory = new Configuration()
                 .configure("hibernate.cfg.xml")
                 .addAnnotatedClass(Child_ManyToMany.class)
@@ -19,13 +29,13 @@ public class ManyToMany_App {
         try {
              session = factory.getCurrentSession();
 
-//           fillTablesBySavingSection(session);
+           fillTablesBySavingSection(session);
 //           addSectionBySavingChild(session);
 //           addSectionBySavingChild2(session);
 //           getInfoBySession(session, 5);
 //           getInfoByChild(session, 7);
-           deleteChild(session, 1);
-//           deleteSection(session, 10);
+//           deleteChild(session, 1);
+//           deleteSection(session, 15);
 
 
         } finally {
