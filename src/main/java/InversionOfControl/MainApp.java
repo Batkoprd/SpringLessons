@@ -142,6 +142,9 @@ public class MainApp {
          */
         AnnotationConfigApplicationContext context =
                 new AnnotationConfigApplicationContext(MyConfig_2.class); //можно менять конфиги
+
+        Cat cat = context.getBean("catBean", Cat.class);
+
         Person person = context.getBean("personBean", Person.class);
         person.callPet();
         System.out.println("Фамилия из myApp.properties: " + person.getSurname() + "\nИмя из myApp.properties: " + person.getAge());

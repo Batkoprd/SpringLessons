@@ -10,23 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d0348a1-a923-42d2-9d8d-3f2a9319d34b" name="Changes" comment="123">
-      <change afterPath="$PROJECT_DIR$/src/main/java/InversionOfControl/Animals/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/InversionOfControl/Examples/TestBeanScope.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InversionOfControl/Cat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InversionOfControl/Configuration/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InversionOfControl/Configuration/MyConfig_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InversionOfControl/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InversionOfControl/Animals/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InversionOfControl/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InversionOfControl/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InversionOfControl/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InversionOfControl/Animals/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InversionOfControl/TestAppContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InversionOfControl/Examples/TestAppContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InversionOfControl/TestBeanScope.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InversionOfControl/TestConfigAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InversionOfControl/Examples/TestConfigAnnotation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InversionOfControl/TestJavaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InversionOfControl/Examples/TestJavaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InversionOfControl/TestScope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InversionOfControl/Examples/TestScopeAnno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InversionOfControl/Configuration/MyConfig_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InversionOfControl/Configuration/MyConfig_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InversionOfControl/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InversionOfControl/MainApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,7 +309,7 @@
       <workItem from="1658078764225" duration="1697000" />
       <workItem from="1658139696421" duration="9832000" />
       <workItem from="1658190080901" duration="608000" />
-      <workItem from="1658217384545" duration="6249000" />
+      <workItem from="1658217384545" duration="6893000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1657649141170</created>
@@ -332,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657649141170</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="123">
+      <created>1658268565256</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658268565256</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
