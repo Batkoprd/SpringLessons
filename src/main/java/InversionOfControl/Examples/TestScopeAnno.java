@@ -1,8 +1,9 @@
-package InversionOfControl;
+package InversionOfControl.Examples;
 
+import InversionOfControl.Animals.Dog;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class TestScope {
+public class TestScopeAnno {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("applicationContext3.xml");

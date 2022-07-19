@@ -1,13 +1,9 @@
 package InversionOfControl;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import InversionOfControl.Animals.Pet;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 
-//@Component("personBean")
 public class Person {
-//    @Autowired
     private Pet pet;
     @Value("${person.surname}")
     private String surname;
@@ -19,7 +15,7 @@ public class Person {
     }
 
     public void setSurname(String surname) {
-        System.out.println("Class person: set surname");
+        System.out.println("Class person: set surname.");
         this.surname = surname;
     }
 
@@ -28,36 +24,26 @@ public class Person {
     }
 
     public void setAge(int age) {
-        System.out.println("Class person: set age");
+        System.out.println("Class person: set age.");
         this.age = age;
     }
 
-
     public Person() {
-        System.out.println("Person bean is created");
+        System.out.println("Пустой конструктор класса " + this.getClass().getSimpleName() + ": Person bean is created.");
     }
 
-//    @Autowired
-//    public Person(@Qualifier("catBean") Pet pet) {
-//        System.out.println("Person bean is created");
-//        this.pet = pet;
-//    }
-
-
     public Person(Pet pet) {
-        System.out.println("Person bean is created");
+        System.out.println("Конструктор Person(Pet pet) класса "+ this.getClass().getSimpleName() + ": Person bean is created.");
         this.pet = pet;
     }
 
-    //    @Autowired
-//    @Qualifier("dog")
     public void setPet(Pet pet) {
-        System.out.println("Class person: set pet");
+        System.out.println("Class person: set pet.");
         this.pet = pet;
     }
 
     public void callPet() {
-        System.out.println("Hello, my lovely Pet!");
+        System.out.println(this.getClass().getSimpleName() + ": Hello, my lovely Pet!");
         pet.say();
     }
 }

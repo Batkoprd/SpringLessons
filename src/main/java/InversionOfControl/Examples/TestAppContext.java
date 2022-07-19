@@ -1,5 +1,7 @@
-package InversionOfControl;
+package InversionOfControl.Examples;
 
+import InversionOfControl.Animals.Pet;
+import InversionOfControl.Person;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestAppContext {

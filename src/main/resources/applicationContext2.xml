@@ -9,16 +9,28 @@
 
 
 
-    <bean id = "myPet"
-          class="InversionOfControl.Dog"
-          scope="prototype"> <!--от синглтон можно создать только один объект-->
+    <bean id = "petSingleton"
+          class="InversionOfControl.Animals.Dog"
+          scope="singleton"> <!--от синглтон можно создать только один объект-->
     </bean>
-<!--
-    <bean id = "myCat"
-          class="InversionOfControl.Cat"
+
+    <bean id = "petPrototype"
+          class="InversionOfControl.Animals.Dog"
+          scope="prototype"> <!--от синглтон можно создать только один объект-->    </bean>
+
+    <bean id = "singletonCat"
+          class="InversionOfControl.Animals.Cat"
+          scope="singleton"
           init-method="init"
           destroy-method="destroy">
     </bean>
-    -->
+
+    <bean id = "prototypeCat"
+          class="InversionOfControl.Animals.Cat"
+          scope="prototype"
+          init-method="init"
+          destroy-method="destroy">
+    </bean>
+
 
 </beans>

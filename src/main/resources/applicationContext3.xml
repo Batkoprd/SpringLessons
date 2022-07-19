@@ -10,7 +10,4 @@
     <context:component-scan base-package="InversionOfControl"/>
     <context:property-placeholder location="classpath:myApp.properties"/>
 
-
-
-
 </beans>

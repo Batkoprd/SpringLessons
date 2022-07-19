@@ -11,7 +11,7 @@
     <context:property-placeholder location="classpath:myApp.properties"/>
 
     <bean id = "myPet"
-          class="InversionOfControl.Dog">
+          class="InversionOfControl.Animals.Dog">
     </bean>
 
 <!--
@@ -29,5 +29,4 @@
         <property name="surname" value="${person.surname}"/>
         <property name="age" value="${person.age}"/>
     </bean>
-
 </beans>
