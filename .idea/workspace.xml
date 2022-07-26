@@ -11,8 +11,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3d0348a1-a923-42d2-9d8d-3f2a9319d34b" name="Changes" comment="123">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InversionOfControl/Configuration/MyConfig_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InversionOfControl/Configuration/MyConfig_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InversionOfControl/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InversionOfControl/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AspectOrientedProgramming/Configuration/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AspectOrientedProgramming/Configuration/MyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AspectOrientedProgramming/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AspectOrientedProgramming/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AspectOrientedProgramming/aspects/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AspectOrientedProgramming/aspects/LoggingAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AspectOrientedProgramming/aspects/UniversityLoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AspectOrientedProgramming/aspects/UniversityLoggingAspect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,11 +25,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="hibernate-configuration-5.2" />
         <option value="hibernate-main-5.2" />
         <option value="Jsp File" />
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -68,21 +71,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lexxx/IdeaProjects/SpringProjects/Tregulov/SpringTraining&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;15a0a4d33c879a3b707e48129144c792&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Lexxx/IdeaProjects/SpringProjects/DailyCodeBuffer/Springboot-Tutorial-main",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "Errors",
+    "spring.configuration.checksum": "15a0a4d33c879a3b707e48129144c792"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="CoreFeatures" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Lexxx\examples\SpringTraining\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\Lexxx\examples\SpringTraining\src\main\webapp" />
@@ -103,13 +109,13 @@
       <recent name="HibernateLessons" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.InversionOfControl.MainApp">
-    <configuration name="InversionOfControl.Examples.TestScopeAnno" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="InversionOfControl.Examples.TestScopeAnno" />
+  <component name="RunManager" selected="Application.CoreFeatures.AOP.Main">
+    <configuration name="AspectOrientedProgramming.MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AspectOrientedProgramming.MainApp" />
       <module name="SpringTraining" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="InversionOfControl.Examples.*" />
+          <option name="PATTERN" value="AspectOrientedProgramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +123,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="InversionOfControl.MainApp" />
+    <configuration name="AspectOrientedProgramming.MyExample.ExampleMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AspectOrientedProgramming.MyExample.ExampleMain" />
       <module name="SpringTraining" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="InversionOfControl.Examples.*" />
+          <option name="PATTERN" value="AspectOrientedProgramming.MyExample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,12 +136,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestBeanScope" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="InversionOfControl.Examples.TestBeanScope" />
+    <configuration name="CoreFeatures.AOP.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CoreFeatures.AOP.Main" />
       <module name="SpringTraining" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="InversionOfControl.Animals.*" />
+          <option name="PATTERN" value="CoreFeatures.AOP.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,12 +149,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestConfigAnnotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="InversionOfControl.Examples.TestConfigAnnotation" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CoreFeatures.Main" />
       <module name="SpringTraining" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="InversionOfControl.Examples.*" />
+          <option name="PATTERN" value="CoreFeatures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,12 +162,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestJavaConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="InversionOfControl.Examples.TestJavaConfig" />
+    <configuration name="MainApp3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AspectOrientedProgramming.MainApp3" />
       <module name="SpringTraining" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="InversionOfControl.Examples.*" />
+          <option name="PATTERN" value="AspectOrientedProgramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -257,20 +263,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.InversionOfControl.Examples.TestScopeAnno" />
-      <item itemvalue="Application.InversionOfControl.MainApp" />
-      <item itemvalue="Application.InversionOfControl.Examples.TestConfigAnnotation" />
-      <item itemvalue="Application.InversionOfControl.Examples.TestJavaConfig" />
-      <item itemvalue="Application.InversionOfControl.TestBeanScope" />
+      <item itemvalue="Application.CoreFeatures.AOP.Main" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.AspectOrientedProgramming.MainApp" />
+      <item itemvalue="Application.AspectOrientedProgramming.MyExample.ExampleMain" />
+      <item itemvalue="Application.MainApp3" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.64" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.InversionOfControl.MainApp" />
-        <item itemvalue="Application.InversionOfControl.Examples.TestJavaConfig" />
-        <item itemvalue="Application.InversionOfControl.Examples.TestScopeAnno" />
-        <item itemvalue="Application.InversionOfControl.Examples.TestConfigAnnotation" />
-        <item itemvalue="Application.InversionOfControl.TestBeanScope" />
+        <item itemvalue="Application.CoreFeatures.AOP.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.AspectOrientedProgramming.MyExample.ExampleMain" />
+        <item itemvalue="Application.AspectOrientedProgramming.MainApp" />
+        <item itemvalue="Application.MainApp3" />
       </list>
     </recent_temporary>
   </component>
@@ -309,7 +315,9 @@
       <workItem from="1658078764225" duration="1697000" />
       <workItem from="1658139696421" duration="9832000" />
       <workItem from="1658190080901" duration="608000" />
-      <workItem from="1658217384545" duration="6893000" />
+      <workItem from="1658217384545" duration="11534000" />
+      <workItem from="1658311792141" duration="608000" />
+      <workItem from="1658313498888" duration="7576000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1657649141170</created>
@@ -325,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658268565256</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="123">
+      <created>1658269045544</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658269045544</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

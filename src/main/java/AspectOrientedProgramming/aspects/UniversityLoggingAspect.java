@@ -17,10 +17,10 @@ public class UniversityLoggingAspect {
     @AfterReturning(pointcut = "execution(* getStudents())",
     returning = "students")
     public void afterReturningGetStudentsLoggingAdvice(List<Student> students) {
-        Student firstSdudent = students.get(0);
-        String nameSurname = firstSdudent.getNameSurname();
+        Student firstStudent = students.get(0);
+        String nameSurname = firstStudent.getNameSurname();
         nameSurname = "Mr. " + nameSurname;
-        firstSdudent.setNameSurname(nameSurname);
+        firstStudent.setNameSurname(nameSurname);
 
         System.out.println("afterReturningGetStudentsLoggingAdvice: логгируем получение списка студентов после  метода getStudents");
     }
@@ -37,7 +37,4 @@ public class UniversityLoggingAspect {
         System.out.println("afterGetStudentsLoggingAdvice: логгируем нормальное окончание работы метода или выброс исключения");
 
     }
-
-
-
 }

@@ -4,12 +4,13 @@ import AspectOrientedProgramming.Classes.Book;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 @Component
-@Aspect
+@Aspect //@Aspect говорит о том, что это не простой класс, а Aspect. Поэтому к данному классу Spring будет относиться по другому.
 @Order(10)
 public class LoggingAspect {
 
@@ -26,7 +27,7 @@ public class LoggingAspect {
 //    public void beforeAllMethodsExceptReturnMagazineFromUniLibraryAdvice() {
 //        System.out.println("beforeAllMethodsExceptReturnMagazineFromUniLibraryAdvice: Log #10");
 //    }
-
+//
 //    @Pointcut("execution(* AspectOrientedProgramming.Classes.UniLibrary.get*())")
 //    private void allGetMethodsUniLibrary(){}
 //    @Pointcut("execution(* AspectOrientedProgramming.Classes.UniLibrary.return*())")
@@ -50,6 +51,7 @@ public class LoggingAspect {
 //        System.out.println("beforeGetAndReturnLoggingAdvice: writing Log #3");
 //    }
 
+    //Before –выполняется до метода с основной логикой
     @Before("AspectOrientedProgramming.aspects.MyPointcut.allAddMethods()") //поинткат, когда должен выполниться сквозной код
     public void beforeAddLoggingAdvice(JoinPoint joinPoint) {
         MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
