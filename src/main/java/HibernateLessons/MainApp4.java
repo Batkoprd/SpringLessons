@@ -23,7 +23,7 @@ public class MainApp4 {
 //                   "where name = 'Elena'").executeUpdate();
 
 //            session.delete(emp);
-            session.createQuery("delete Employee_OneToOne_UNI " +
+            session.createQuery("delete Employee " +
                     "where name = 'Alexander'").executeUpdate();
 
             session.getTransaction().commit();

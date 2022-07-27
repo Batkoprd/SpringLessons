@@ -16,15 +16,14 @@ public class MainApp2 {
             Employee emp = new Employee("Oleg", "Dmitriev", "IT", 900);
             session.beginTransaction();
             session.save(emp);
-//            session.getTransaction().commit();
+            session.getTransaction().commit();
 
-            int myId = emp.getId();
+//            int myId = emp.getId();
 //            session = factory.getCurrentSession();
 //            session.beginTransaction();
-            Employee employee = session.get(Employee.class, myId);
-            session.getTransaction().commit();
-            System.out.println(employee);
-
+//            Employee employee = session.get(Employee.class, myId);
+//            session.getTransaction().commit();
+//            System.out.println(employee);
             System.out.println("Done");
         } finally {
             factory.close();

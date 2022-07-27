@@ -19,7 +19,7 @@ public class MainApp3 {
 //            List<Employee> employees = session.createQuery("from Employee")
 //                            .getResultList();
 
-            List<Employee> employees = session.createQuery("from Employee_OneToOne_UNI " +
+            List<Employee> employees = session.createQuery("from Employee " +
                             "where name =  'Oleg' AND salary > 700")
                     .getResultList();
             for (Employee e : employees) {

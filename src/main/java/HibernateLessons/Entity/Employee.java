@@ -1,7 +1,7 @@
 package HibernateLessons.Entity;
 
 import javax.annotation.Generated;
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "employees")
