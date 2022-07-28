@@ -1,11 +1,11 @@
 package HibernateLessons.OneToManyBi.Entity;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "departments")
+@Table(name = "departments_onetomany")
 public class Department_OneToMany_BI {
 
     @Id

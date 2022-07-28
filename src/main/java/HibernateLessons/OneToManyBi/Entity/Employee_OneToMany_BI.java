@@ -1,9 +1,9 @@
 package HibernateLessons.OneToManyBi.Entity;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
-@Table(name = "employees")
+@Table(name = "employees_onetomany")
 public class Employee_OneToMany_BI {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,8 +19,8 @@ public class Employee_OneToMany_BI {
     @Column(name = "salary")
     private int salary;
 
-//    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.DETACH, CascadeType.REFRESH, CascadeType.MERGE})
-    @ManyToOne(cascade = CascadeType.ALL,   //Много работников может работать в одном департаменте
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.DETACH, CascadeType.REFRESH, CascadeType.MERGE},
+//    @ManyToOne(cascade = CascadeType.ALL,   //Много работников может работать в одном департаменте
                 fetch = FetchType.EAGER)     // ManyToOne у каждого из множества работников может быть только один департамент, поэтому когда мы подгружаем работника нет проблем подгрузить одну строку департамента
     //В @ManyToOne ForeignKey всегда находится в таблице Many, в данном случае employees
     @JoinColumn(name = "department_id") // В аннотации @JoinColumn всегда прописываем ForeignKey, в данном случае он находится в таблице employees

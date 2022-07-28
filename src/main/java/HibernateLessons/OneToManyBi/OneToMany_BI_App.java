@@ -17,10 +17,10 @@ public class  OneToMany_BI_App {
 
         try {
             session = factory.getCurrentSession();
-//            addEmployeesToDepartment(session);
-            infoByDepartment(session, 3);
-//            infoByEmployee(session,1);
-//            deleteEmployee(session, 3);
+            addEmployeesToDepartment(session);
+//            infoByDepartment(session, 3);
+//            infoByEmployee(session,3);
+//            deleteEmployee(session, 1);
 
         } finally {
             session.close();
@@ -42,7 +42,7 @@ public class  OneToMany_BI_App {
                 "\n------------------------------");
 
         session.beginTransaction();
-        session.save(department);
+        session.persist(department);
 
         session.getTransaction().commit();
         System.out.println("!!!Done!!!");
@@ -60,7 +60,7 @@ public class  OneToMany_BI_App {
         department.getEmps().get(0);
 
         System.out.println("Show emps of the department before commit: ");
-        // При FetchType.EAGER Hibernate один раз делает SELECT всего и ему не нужно потом получать информацию о работниках
+//      При FetchType.EAGER Hibernate один раз делает SELECT всего и ему не нужно потом получать информацию о работниках
         System.out.println(department.getEmps() );
 //      При FetchType.LAZY Hibernate делает два селекта, сначала выбирает департамент, а перед тем как вывести работников выбирает работников и выводит их на экран
         session.getTransaction().commit();
@@ -90,13 +90,13 @@ public class  OneToMany_BI_App {
     public static void deleteEmployee(Session session, int id) {
         session.beginTransaction();
 
-        Employee_OneToMany_BI employee = session.get(Employee_OneToMany_BI.class, 1);
+        Employee_OneToMany_BI employee = session.get(Employee_OneToMany_BI.class, id);
 
         System.out.println("------------------------------" +
                 "\n Удаляем employee." +
                 "\n------------------------------");
 
-        session.delete(employee);
+        session.remove(employee);
         // Если CascadeType.ALL, то когда мы удаляем одного работника, то он удаляет и его департамент,
         // а за ним удаляются все остальные работники этого департамента
         session.getTransaction().commit();

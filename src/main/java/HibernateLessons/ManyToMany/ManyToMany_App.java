@@ -32,10 +32,10 @@ public class ManyToMany_App {
            fillTablesBySavingSection(session);
 //           addSectionBySavingChild(session);
 //           addSectionBySavingChild2(session);
-//           getInfoBySession(session, 5);
-//           getInfoByChild(session, 7);
-//           deleteChild(session, 1);
-//           deleteSection(session, 15);
+//           getInfoBySection(session, 1);
+//           getInfoByChild(session, 8);
+//           deleteChild(session, 8);
+//           deleteSection(session, 6);
 
 
         } finally {
@@ -95,7 +95,7 @@ public class ManyToMany_App {
         child1.addSectionToChild(section3);
 
         session.beginTransaction();
-        session.save(child1);
+        session.persist(child1);
         session.getTransaction().commit();
 
         System.out.println("!!!Done!!!");
@@ -118,15 +118,15 @@ public class ManyToMany_App {
 
         session.beginTransaction();
 
-        session.save(child1);
-        session.save(child2);
-        session.save(child3);
+        session.persist(child1);
+        session.persist(child2);
+        session.persist(child3);
 
         session.getTransaction().commit();
         System.out.println("!!!Done!!!");
     }
 
-    public static void getInfoBySession(Session session, int id) {
+    public static void getInfoBySection(Session session, int id) {
 
         session.beginTransaction();
         Section_ManyToMany section = session.get(Section_ManyToMany.class, id);
@@ -171,3 +171,25 @@ public class ManyToMany_App {
         System.out.println("!!!Done!!!");
     }
 }
+
+/*
+CREATE TABLE hibernate_example_db.children_manytomany (
+  id int NOT NULL AUTO_INCREMENT,
+  name varchar(15),
+  age int,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE hibernate_example_db.section_manytomany (
+  id int NOT NULL AUTO_INCREMENT,
+  name varchar(15),
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE hibernate_example_db.child_section_manytomany (
+  child_id int NOT NULL,
+  section_id int NOT NULL,
+  PRIMARY KEY (child_id, section_id),
+  FOREIGN KEY (child_id) REFERENCES hibernate_example_db.children_manytomany(id),
+  FOREIGN KEY (section_id) REFERENCES hibernate_example_db.section_manytomany(id));
+ */

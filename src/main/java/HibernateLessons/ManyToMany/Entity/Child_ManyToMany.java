@@ -1,11 +1,11 @@
 package HibernateLessons.ManyToMany.Entity;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "children")
+@Table(name = "children_manytomany")
 public class Child_ManyToMany {
 
     @Id
@@ -25,7 +25,7 @@ public class Child_ManyToMany {
                                                         // с секцией и наоборот, если удалить ребенка, то секция остается,
                                                         // если удалить секцию, то ребенок может ходить в другие секции
             fetch = FetchType.LAZY)
-    @JoinTable(name = "child_section" //Join Table – это таблица, которая отображает связь между строками 2-х других таблиц
+    @JoinTable(name = "child_section_manytomany" //Join Table – это таблица, которая отображает связь между строками 2-х других таблиц
             , joinColumns = @JoinColumn(name =  "child_id") // Столбцы Join Table–это Foreign Key, которые ссылаются на Primary Key связываемых таблиц
             , inverseJoinColumns = @JoinColumn(name = "section_id")) //мы прописываем с помощью каких столбцов JoinTable связана с таблицей children и sections
     private List<Section_ManyToMany> sections;
