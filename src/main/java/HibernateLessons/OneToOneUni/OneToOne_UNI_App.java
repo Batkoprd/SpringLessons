@@ -18,8 +18,8 @@ public class OneToOne_UNI_App {
 
         try {
             session = factory.getCurrentSession();
-//            addEmployees(session);
-            deleteEmployee(session, 10);
+            addEmployees(session);
+//            deleteEmployee(session, 10);
 
 
         } finally {
@@ -29,21 +29,23 @@ public class OneToOne_UNI_App {
     }
 
     public static void addEmployees(Session session) {
-//        Employee emp = new Employee("John", "Johnson", "IT", 500);
-//        Detail detail = new Detail("Praha", "123456789", "johnson@gmail.com");
-        Employee_OneToOne_UNI emp = new Employee_OneToOne_UNI("Oleg", "Smirnov", "Sales", 600);
-        Detail_OneToOne_UNI detail = new Detail_OneToOne_UNI("Moscow", "987654321", "smirnov@gmail.com");
+        Employee_OneToOne_UNI emp1 = new Employee_OneToOne_UNI("John", "Johnson", "IT", 500);
+        Detail_OneToOne_UNI detail1 = new Detail_OneToOne_UNI("Praha", "123456789", "johnson@gmail.com");
+        Employee_OneToOne_UNI emp2 = new Employee_OneToOne_UNI("Oleg", "Smirnov", "Sales", 600);
+        Detail_OneToOne_UNI detail2 = new Detail_OneToOne_UNI("Moscow", "987654321", "smirnov@gmail.com");
 
         System.out.println("------------------------------" +
                 "\n Назначаем детали работнику" +
                 "\n------------------------------");
-        emp.setEmpDetail(detail); // назначаем детали работнику
+        emp1.setEmpDetail(detail1); // назначаем детали работнику
+        emp2.setEmpDetail(detail2);
         session.beginTransaction();
 
         System.out.println("------------------------------" +
                 "\n Сохраняем работника и, благодаря каскаду, сохраняются его детали." +
                 "\n------------------------------");
-        session.save(emp);
+        session.save(emp1);
+        session.save(emp2);
 
         session.getTransaction().commit();
         System.out.println("!!!Done!!!");
@@ -62,3 +64,23 @@ public class OneToOne_UNI_App {
     }
 }
 
+/*
+CREATE TABLE hibernate_example_db.details_OneToOne (
+  id int NOT NULL AUTO_INCREMENT,
+  city varchar(15),
+  phone_number varchar(25),
+  email varchar(30), PRIMARY KEY (id)
+);
+
+CREATE TABLE hibernate_example_db.employees_OneToOne (
+  id int NOT NULL AUTO_INCREMENT,
+  name varchar(15),
+  surname varchar(25),
+  department varchar(20), salary int, details_id int
+,  PRIMARY KEY (id)
+, FOREIGN KEY (details_id) REFERENCES hibernate_example_db.details_OneToOne(id));
+ */
+
+/*
+Пришлось поменять javax.persistence.* на jakarta в entity, иначе было исключение  Unable to locate persister.
+ */

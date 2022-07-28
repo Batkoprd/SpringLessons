@@ -11,13 +11,20 @@
   <component name="ChangeListManager">
     <list default="true" id="3d0348a1-a923-42d2-9d8d-3f2a9319d34b" name="Changes" comment="123">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HibernateLessons/Entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HibernateLessons/Entity/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HibernateLessons/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HibernateLessons/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HibernateLessons/MainApp2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HibernateLessons/MainApp2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HibernateLessons/MainApp3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HibernateLessons/MainApp3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HibernateLessons/MainApp4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HibernateLessons/MainApp4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HibernateLessons/ManyToMany/Entity/Child_ManyToMany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HibernateLessons/ManyToMany/Entity/Child_ManyToMany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HibernateLessons/ManyToMany/Entity/Section_ManyToMany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HibernateLessons/ManyToMany/Entity/Section_ManyToMany.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HibernateLessons/MainApp2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HibernateLessons/MainApp3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HibernateLessons/MainApp4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HibernateLessons/OneToManyUni/Entity/Department_OneToMany_UNI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HibernateLessons/OneToManyUni/Entity/Department_OneToMany_UNI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HibernateLessons/OneToManyUni/Entity/Employee_OneToMany_UNI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HibernateLessons/OneToManyUni/Entity/Employee_OneToMany_UNI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HibernateLessons/OneToManyUni/OneToMany_UNI_App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HibernateLessons/OneToManyUni/OneToMany_UNI_App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HibernateLessons/OneToOneBi/Entity/Detail_OneToOne_BI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HibernateLessons/OneToOneBi/Entity/Detail_OneToOne_BI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HibernateLessons/OneToOneBi/Entity/Employee_OneToOne_BI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HibernateLessons/OneToOneBi/Entity/Employee_OneToOne_BI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HibernateLessons/OneToOneBi/OneToOne_BI_App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HibernateLessons/OneToOneBi/OneToOne_BI_App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HibernateLessons/OneToOneUni/Entity/Detail_OneToOne_UNI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HibernateLessons/OneToOneUni/Entity/Detail_OneToOne_UNI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HibernateLessons/OneToOneUni/Entity/Employee_OneToOne_UNI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HibernateLessons/OneToOneUni/Entity/Employee_OneToOne_UNI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HibernateLessons/OneToOneUni/OneToOne_UNI_App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HibernateLessons/OneToOneUni/OneToOne_UNI_App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,20 +80,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Lexxx/IdeaProjects/SpringProjects/Tregulov/SpringTraining",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "Errors",
-    "spring.configuration.checksum": "15a0a4d33c879a3b707e48129144c792"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lexxx/IdeaProjects/SpringProjects/Tregulov/SpringTraining&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;15a0a4d33c879a3b707e48129144c792&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="CoreFeatures" />
@@ -111,35 +118,9 @@
       <recent name="HibernateLessons" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainApp">
+  <component name="RunManager" selected="Application.OneToMany_UNI_App">
     <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HibernateLessons.MainApp" />
-      <module name="SpringTraining" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HibernateLessons.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainApp2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HibernateLessons.MainApp2" />
-      <module name="SpringTraining" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HibernateLessons.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainApp3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HibernateLessons.MainApp3" />
       <module name="SpringTraining" />
       <extension name="coverage">
         <pattern>
@@ -164,12 +145,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManyToMany_App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HibernateLessons.ManyToMany.ManyToMany_App" />
+    <configuration name="OneToMany_UNI_App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HibernateLessons.OneToManyUni.OneToMany_UNI_App" />
       <module name="SpringTraining" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HibernateLessons.ManyToMany.*" />
+          <option name="PATTERN" value="HibernateLessons.OneToManyUni.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OneToOne_BI_App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HibernateLessons.OneToOneBi.OneToOne_BI_App" />
+      <module name="SpringTraining" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HibernateLessons.OneToOneBi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OneToOne_UNI_App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HibernateLessons.OneToOneUni.OneToOne_UNI_App" />
+      <module name="SpringTraining" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HibernateLessons.OneToOneUni.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -265,20 +272,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.OneToMany_UNI_App" />
+      <item itemvalue="Application.OneToOne_BI_App" />
+      <item itemvalue="Application.OneToOne_UNI_App" />
       <item itemvalue="Application.MainApp" />
-      <item itemvalue="Application.MainApp2" />
       <item itemvalue="Application.MainApp4" />
-      <item itemvalue="Application.ManyToMany_App" />
-      <item itemvalue="Application.MainApp3" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.64" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OneToMany_UNI_App" />
+        <item itemvalue="Application.OneToOne_BI_App" />
+        <item itemvalue="Application.OneToOne_UNI_App" />
         <item itemvalue="Application.MainApp" />
         <item itemvalue="Application.MainApp4" />
-        <item itemvalue="Application.MainApp3" />
-        <item itemvalue="Application.MainApp2" />
-        <item itemvalue="Application.ManyToMany_App" />
       </list>
     </recent_temporary>
   </component>
@@ -320,7 +327,10 @@
       <workItem from="1658217384545" duration="11534000" />
       <workItem from="1658311792141" duration="608000" />
       <workItem from="1658313498888" duration="7576000" />
-      <workItem from="1658867244222" duration="4436000" />
+      <workItem from="1658867244222" duration="4579000" />
+      <workItem from="1658918402659" duration="595000" />
+      <workItem from="1658937202242" duration="598000" />
+      <workItem from="1659007664213" duration="8659000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1657649141170</created>
@@ -357,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658867288228</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="123">
+      <created>1658882751589</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658882751589</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,11 +402,6 @@
           <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/HibernateLessons/OneToOneUni/Entity/Employee_OneToOne_UNI.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

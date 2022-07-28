@@ -23,9 +23,9 @@ public class OneToOne_BI_App {
 
         try {
             session = factory.getCurrentSession();
-//            addEmployeeByDetail(session);
+            addEmployeeByDetail(session);
 //            getInfoByDetail(session, 1);
-            tearEmpDetailConnection(session, 1);
+//            tearEmpDetailConnection(session, 1);
 
 
 
@@ -53,7 +53,7 @@ public class OneToOne_BI_App {
         System.out.println("------------------------------" +
                 "\n Сохраняем детали, сохранится и работник за счет двусторонней связи." +
                 "\n------------------------------");
-            session.save(detail);
+            session.persist(detail); //Если в Detail не CascadeType.ALL, то нужно использовать persist, а не сейв, потому что работник не сохранится за деталями, а {CascadeType.PERSIST, CascadeType.REFRESH} нужен, чтобы рабоник не удалялся из вслед за деталями
 
             session.getTransaction().commit();
             System.out.println("!!!Done!!!");

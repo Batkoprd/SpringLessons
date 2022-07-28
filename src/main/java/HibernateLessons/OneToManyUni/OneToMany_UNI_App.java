@@ -19,10 +19,10 @@ public class OneToMany_UNI_App {
 
         try {
             session = factory.getCurrentSession();
-//            addEmployeesByDepartment(session);
-//            getEmpsByDepartment(session, 2);
-//            deleteEmployee(session, 4);
-            deleteDepartment(session, 2);
+            addEmployeesByDepartment(session);
+//            getEmpsByDepartment(session, 1);
+//            deleteEmployee(session, 1);
+//            deleteDepartment(session, 1);
 
         } finally {
             session.close();
@@ -41,7 +41,7 @@ public class OneToMany_UNI_App {
                 "\n------------------------------");
         // Благодаря Uni-directional связи и CascadeType.ALL при сохранении департамента сохранятся и работники
         session.beginTransaction();
-        session.save(department);
+        session.persist(department);
 
         session.getTransaction().commit();
         System.out.println("!!!Done!!!");
@@ -109,5 +109,22 @@ public class OneToMany_UNI_App {
     }
 }
 
+/*
+CREATE TABLE hibernate_example_db.departments_OneToMany (
+  id int NOT NULL AUTO_INCREMENT,
+  name varchar(15),
+  max_salary int,
+  min_salary int,
+  PRIMARY KEY (id)
+);
 
+CREATE TABLE hibernate_example_db.employees_OneToMany (
+  id int NOT NULL AUTO_INCREMENT,
+  name varchar(15),
+  surname varchar(25),
+  salary int,
+  department_id int,
+  PRIMARY KEY (id),
+  FOREIGN KEY (department_id) REFERENCES hibernate_example_db.departments_OneToMany(id));
+ */
 

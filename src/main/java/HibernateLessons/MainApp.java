@@ -4,9 +4,8 @@ import HibernateLessons.Entity.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import org.springframework.lang.Nullable;
+import org.hibernate.query.Query;
 
-import javax.management.Query;
 import java.util.List;
 
 
@@ -22,9 +21,12 @@ public class MainApp {
         try {
             session = factory.getCurrentSession();
 
-//            insertEmployeeIntoDB(session);
+            insertEmployeeIntoDB(session);
 //            getEmployeeByID(session, 3);
-            getEmployeesByNameAndSalary(session,"Oleg", 700);
+//            getEmployeesByNameAndSalary(session,"Oleg", 700);
+//            updateEmployeeSalary(session, 6, 2000);
+//            deleteEmployeeFromDB(session, 3);
+
         } finally {
             session.close();
             factory.close();
@@ -58,14 +60,56 @@ public class MainApp {
     public static void getEmployeesByNameAndSalary(Session session, String myName, int mySalary) {
 
         session.beginTransaction();
-        String query = "from Employee where name = " + myName  + " AND salary > " + mySalary;
-        List<Employee> employees = session.createQuery(query)
-                .getResultList();
+        Query query = session.createQuery("from Employee where name = ?1 AND salary > ?2", Employee.class);
+        query.setParameter(1, myName);
+        query.setParameter(2, mySalary);
+        List<Employee> employees = query.getResultList();
         for (Employee e : employees) {
             System.out.println(e);
         }
         session.getTransaction().commit();
-        System.out.println("Done");
+        System.out.println("!!!Done!!!");
+    }
+
+    public static void updateEmployeeSalary(Session session, int id, int mySalary) {
+        session.beginTransaction();
+        Query query = session.createQuery("update Employee set salary = ?1 where id = ?2");
+        query.setParameter(1, mySalary);
+        query.setParameter(2, id);
+        query.executeUpdate();
+
+//        Employee emp = session.get(Employee.class, id);
+//        emp.setSalary(mySalary);
+
+        session.getTransaction().commit();
+        System.out.println("!!!Done!!!");
+    }
+
+    public static void deleteEmployeeFromDB(Session session, int id) {
+        session.beginTransaction();
+        Query query = session.createQuery("delete  Employee where id = ?1");
+        query.setParameter(1, id);
+        query.executeUpdate();
+
+//        Employee emp = session.get(Employee.class, id);
+//        session.delete(emp);
+
+
+        session.getTransaction().commit();
+        System.out.println("!!!Done!!!");
     }
 }
 
+/*
+CREATE DATABASE  hibernate_example_db;
+USE hibernate_example_db;
+
+CREATE TABLE employees (
+  id int NOT NULL AUTO_INCREMENT,
+  name varchar(15),
+  surname varchar(25),
+  department varchar(20),
+  salary int,
+  PRIMARY KEY (id)
+);
+ */

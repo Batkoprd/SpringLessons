@@ -1,9 +1,9 @@
 package HibernateLessons.OneToOneUni.Entity;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
-@Table(name = "details")
+@Table(name = "details_onetoone")
 public class Detail_OneToOne_UNI {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
